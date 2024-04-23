@@ -1,0 +1,936 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  zoom: 1;
+  font-family: 'Mulish', sans-serif;
+}
+:root{--primaryColor:#8C2B3D; --secondaryColor:#DAA4B8; --primaryAccent:#8C2B3D;}
+
+.navContainer{
+    display: flex;
+    justify-content: space-between
+}
+.navBar{
+    padding: 1rem 5rem;
+}
+.navBar .navBarContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color:var(--primaryAccent) ;
+}
+.logoT{
+    display: inline-flex;
+    border: 5px solid var(--primaryAccent);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    margin-right: 0.5rem;   
+}
+.logoText{
+    display: inline-flex;
+    align-items: center;
+}
+.bars{
+    display:none;
+}
+.bars i{
+    font-size: 2rem;
+}
+.menu{
+    display:flex;
+    align-items: center;
+}
+.menu nav ul li{
+    
+    display: inline-block;
+    margin-left: 4rem;
+    list-style: none;
+}
+.menu nav ul li:hover a{
+    color: var(--secondaryColor);
+}
+.menu nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight:700;
+}
+.menu nav ul li a:hover{
+    color: var(--secondaryColor);
+}
+.homeDescription{
+    width: 100%;
+    height: 100vh;
+}
+.home .navBar{
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+.homeDescriptionContainer{
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+.homeDescriptionContainerLeft{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5rem;
+}
+.homeDescriptionContainerRight{
+    width: 70%;
+    height: 100%;
+    position: relative;
+}
+.homeDescriptionContainerRight video{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.homeDescriptionContainerRight div{
+    position: absolute;
+    display: block;
+    z-index: 9;
+    background: rgba(140,43,61,0.3);
+    width: 100%;
+    height: 100%;
+}
+#componentsContainer{
+    background:white;
+    width:70%;
+    height:80%;
+    position:absolute;
+    z-index: 20;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 2rem;
+}
+
+.skeleton{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,#eee,#c7b8b8,#eee);
+    animation: animate 2s infinite linear;
+    background-size: 200%;
+    padding: 2rem;
+}
+
+.skeleton-formUp{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.skeleton-formUpInput{
+    width: 45%;
+}
+.skeleton-formUpInput label{
+    display: block;
+    width: 20%;
+    height: 1.5rem;
+    background:rgb(197, 189, 189) ;
+}
+.skeleton-formUp input{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: 0;
+    outline: none;
+    background:rgb(197, 189, 189) ;
+    margin-top: 0.5rem;
+}
+.skeleton-exchange{
+    width: 9%;
+   
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.skeleton-exchange span{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background:rgb(197, 189, 189) ;
+    border-radius: 50%;
+}
+
+@keyframes animate{
+    0%{
+        background-position: -100% 0;
+    }
+    100%{
+        background-position: 100% 0;
+    }
+}
+.skeleton h1{
+    background-color: rgb(197, 189, 189);
+    width: 100%;
+    height: 10%;
+}
+.skeleton p{
+    background-color: rgb(197, 189, 189);
+    width: 100%;
+    height: 20%;
+    margin-top: 1rem;
+}
+.skeleton-rate{
+    width: 30%;
+}
+.skeleton-rate span{
+    display: block;
+    width: 100%;
+    height: 2rem;
+    background-color: rgb(197, 189, 189);
+    margin-top: 1rem;
+}
+
+
+/*======================================*/
+
+.item h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primaryColor);
+}
+.convertDescription p{
+    margin-top: 0.5rem;
+}
+
+.operation{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+   position: relative;
+}
+
+.form{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background-color: white;
+   
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.operationContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.operationContainer .operationContainerItems{
+    position: relative;
+    border-radius: 2rem;
+}
+.operationContainer .operationContainerItems .item{
+    position: absolute;
+    width: 100%;
+   
+    display: none;
+    padding: 3rem;
+    z-index: 200;
+  
+}
+.operationContainer .operationContainerItems .item.active{
+    display: block;
+}
+.prevNextButton{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 300;
+    padding:1rem 3rem;
+  
+}
+.allDots{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding:1rem 0rem;
+    bottom: 0;
+}
+.allDots .dot{
+    width: 15px;
+    height: 15px;
+    margin: 0px 2px;
+    border: 1px solid var(--primaryColor);
+    border-radius: 50%;
+    display: inline-block;
+    
+}
+.allDots  .dotsContainer .dot.active{
+    background-color: var(--primaryColor);
+}
+.prev{
+    display: none;
+    border: 1px solid var(--secondaryColor);
+    outline: none;
+    font-weight: bolder;
+    color: var(--primaryAccent);
+    padding: 0.2rem 0.5rem;
+    background: white;
+}
+.next{
+    border: 1px solid var(--secondaryColor);
+    outline: none;
+    font-weight: bolder;
+    color: var(--primaryAccent);
+    padding: 0.2rem 0.5rem;
+    background: white;
+}
+.next:hover,.prev:hover{
+    color: white;
+    background: var(--primaryColor);
+    transition: 0.5s;
+}
+.convertForm{
+    width: 100%;
+    margin-top: 1rem;
+}
+.select{
+    width: 100%;
+}
+.countrySelect{
+    display: flex;
+    width: 100%;
+}
+label{
+    display: block;
+    font-weight: bold;
+}
+.exchange{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    position: relative;
+    margin: 0.5rem;
+   
+}
+.exchange span{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    padding: 0.5rem;
+    border: 1px solid gray;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
+}
+.exchange span i{
+    color: var(--primaryColor);
+}
+.from,.to{
+    width: 45%;
+}
+select{
+    display: block;
+    width:100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #DCDCDC;
+    outline-color: var(--primaryColor);
+}
+
+.calculator{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+.amount{
+    width: 45%;
+}
+.amountCountry{
+    color: var(--primaryAccent);
+    font-weight: bolder;
+}
+.calculator input{
+    padding:0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    outline-color: var(--primaryAccent);
+}
+.converterBtn{
+    width: 45%;
+    position: relative;
+}
+.converterBtn button{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding:0.5rem;
+    background: #8C2B3D;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    outline: none;
+}
+.converterBtn button:hover{
+    background: var(--secondaryColor);
+}
+.montantConverti{
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.receiverInfo{
+    display: flex;
+    margin-top: 2rem;
+}
+.receiverInfoImg{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.receiverInfoImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.receiverInfoForm{
+    width:60%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.receiverInfo form{
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 0.5rem;
+}
+.receiverInfo form input{
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+    padding:0.7rem;
+    border:0;
+    outline: none;
+    background-color: var(--secondaryColor);
+    
+}
+.receiverInfo form input::placeholder{
+    color: white;
+}
+
+.receiverInfo form textarea{
+    width: 100%;
+    padding: 3rem 0.7rem 0.7rem 0.7rem;
+    margin-top: 1rem;
+    border:0;
+    outline: none;
+    background-color: var(--secondaryColor);
+}
+.receiverInfo form textarea::placeholder{
+    color: white;
+}
+.convertedAm{
+    display: none;
+    margin-top: 2rem;
+}
+.activeAmount{
+    margin-top: 2rem;
+    font-weight: bold;
+}
+.egale{
+    display: inline-block;
+    margin: 0rem 1rem;
+    font-size: 5rem;
+}
+.countryRate{
+    font-size: 2rem;
+    color: gray;
+}
+.convertAmount{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.convertedAmountRate{
+    color: gray;
+    font-weight: bold;
+}
+.display div{
+    margin-top: 1rem;
+}
+.displayKey{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.displayKeyValue{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: gray;  
+    margin-left: 2rem
+}
+.confirmation{
+    display: flex;
+    justify-content: right;
+}
+.confirmation button{
+    padding: 0.5rem 1rem;
+    background: var(--primaryAccent);
+    color: white;
+    outline: none;
+    border: 0;
+    font-weight: bolder;
+}
+
+.hidden{
+    display: none;
+}
+.connexion{
+    background: var(--primaryAccent);
+    padding: 0.5rem 1rem;
+}
+
+/*=====ACCOUNT-CONNEXION============*/
+
+.connexionSection{
+    width: 100%;
+    height: 100vh;
+}
+#root{
+    width: 100%;
+    height: 100vh;
+}
+.loginForm,.signUp{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginFormContainer,.signUpContainer{
+    width: 30%;
+    border: 1px solid rgb(202, 195, 195);
+    padding:3rem 1rem;
+}
+.loginForm h1,.signUp h1{
+    text-align: center;
+    color: var(--primaryColor);
+    font-weight: 900;
+}
+.loginForm input,.signUp input{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: 1px solid rgb(202, 195, 195);
+    outline: none;
+    background:rgb(243, 238, 238) ;
+}
+.loginForm button,.signUp button{
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border: 0;
+    outline: none;
+    background: var(--primaryAccent);
+    color: white;
+    font-weight: 900;
+}
+.createAccount{
+    margin-top: 1rem;
+    display: flex;
+    justify-content:center;
+}
+.createAccount span{
+    font-size: 0.8rem;
+}
+.createAccountButton{
+    color: var(--primaryAccent);
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+.createAccountText{
+    color: gray;
+}
+.errorMessage{
+    color: red;
+    font-size: 0.7rem;
+}
+.vousEstes{
+    display: none;
+}
+/*==============CONTACT===========================*/
+.contact{
+    position: relative;
+}
+.contact .navBar .menu nav ul li a{
+    color: var(--primaryAccent);
+}
+.contactContainer{
+    display:flex;
+    padding: 5rem;
+}
+.contactContainerText{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-right: 3rem;
+}
+.contactContainerText p{
+    margin-top: 1rem ;
+}
+.contactContainerText h1{
+    font-weight: 900;
+}
+.whatsapp{
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+.whatsapp i{
+    margin-right: 0.5rem;
+    color: green;
+}
+.contactContainerForm{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+}
+.contactContainerForm form{
+    width: 100%;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.contactContainerForm form input{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid rgb(219, 209, 209);
+    outline: none;
+    
+}
+.contactContainerForm form textarea{
+    width: 100%;
+    height: 5rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid rgb(219, 209, 209);
+    outline: none;
+}
+.submit{
+    border: 0;
+    background:var(--primaryAccent);
+    color: white;
+    font-weight: 900;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+.socialMedia{
+    margin-top: 1rem;
+}
+.socialMedia span{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.socialMedia i{
+    color: var(--primaryColor);
+}
+.kab{
+    position: absolute;
+    z-index: 10;
+}
+.kabb{
+    width: 100%;
+    height: 100vh;
+    background: #f5eaee;
+    position: absolute;
+    /*clip-path: polygon(83% 0, 100% 0, 100% 43%, 100% 75%, 100% 100%, 0 100%, 0 81%, 29% 45%, 61% 27%);*/
+    clip-path: circle(51.5% at 97% 51%);
+}
+.contact .navBar .navBarContainer .menu nav ul li .connexion{
+    color: white;
+}
+
+/*======================================================*/
+
+
+@media only screen and (max-width:992px){
+   
+    .bars{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+}
+@media only screen and (max-width:885px){
+    .navBar{
+        padding:1rem 3rem;
+    }
+    .bars{
+        display:block;
+    }
+    .howItworksHeaderDescriptionContainer{
+        padding:12rem 3rem 3rem 3rem;
+    }
+    .title h1{
+        font-size: 3rem;
+    }
+    .explore{
+        padding: 3rem;
+    }
+    .conversion{
+        padding: 3rem;
+    }
+    .sendMoney{
+        padding: 15rem 3rem;
+    }
+    .sendMoneyContainerScreenshot{
+       
+        padding-left: 1rem;
+    }
+    .sendMoneyContainerScreenshot{
+        display: flex;
+        width: 100%;
+       
+    }
+    .depositProcess{
+        padding: 2rem 2rem;
+    }
+    .receiveMoney{
+      
+        padding: 3rem;
+    }
+}
+@media only screen and (max-width:750px){
+   
+    .exploreDescription{
+        display: block;
+        margin-top: 2rem;
+    }
+    .exploreDescriptionText{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .exploreDescriptionText p{
+        line-height: 1.5rem;
+        margin-right: 0rem;
+    }
+    .exploreDescriptionImage{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .conversionContainer{
+        display:block;
+    }
+    .conversionContainerImage{
+        width: 100%;
+    }
+    .conversionContainerText{
+        width: 100%;
+
+    }
+   
+    .sendMoneyContainer{
+        display:block;
+    }
+    .sendMoneyContainerText{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .sendMoneyContainerScreenshotContainer{
+        display: flex;
+        width: 100%;
+        padding-left: 0;
+    }
+    .sendMoneyContainerScreenshot{
+        margin-top: 2rem;
+
+    }
+    .depositProcessContainer{
+        display: block;
+        }
+        .bankDeposit{
+            width: 100%;
+            margin: 0;
+            margin-top: 2rem;
+        }
+       .receiveMoneyContainer{
+        display: block;
+       }
+       .receiveMoneyDescription{
+        width: 100%;
+        padding-right: 0rem;
+       }
+       .receiveMoneyMethodes{
+        width: 100%;
+        padding-left: 0rem;
+        margin-top: 2rem;
+       }
+       .receiveMoneyMethodescontainer{
+        display:flex;
+       }
+       .securité{
+        padding:3rem;
+    }
+       .securitéContainer{
+        width: 100%;
+        height: fit-content;
+
+        border-radius: 0;
+        display: block;
+    }
+    .securitéTitle{
+       margin-bottom: 2rem;
+        
+    }
+    .one{
+        display: block;
+        width: 100%;
+        position: relative;
+        padding: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .un{
+        top: auto;
+        left: auto;
+    }
+    .deux{
+        bottom: auto;
+        left: auto;
+    }
+    .trois{
+        right: auto;
+        top:auto;
+    }
+    .quatre{
+        bottom: auto;
+        right: auto;
+    }
+    .contactContainer{
+        padding: 3rem;
+    }
+       .footer{
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--primaryColor);
+        color: white;
+    }
+}
+@media only screen and (max-width:600px){
+    .logo{
+        display: flex;
+        align-items: center;
+        color:var(--primaryAccent) ;
+    }
+    .logoT{
+        border: 2px solid var(--primaryAccent);
+        width: 30px;
+        height: 30px;
+        margin-right: 0.2rem;   
+    }
+    .logo h2{
+        font-size: 1rem;
+    }
+    .navBar .navBarContainer .logo .textLogo{
+        font-size: 0.5rem;
+    }
+    .navBar{
+        padding: 1rem 2rem;
+    }
+    .howItworksHeaderDescriptionContainer{
+        padding:10rem 2rem 2rem 2rem;
+    }
+    .title h1{
+        font-size: 2rem;
+    }
+    .explore{
+        padding:2rem 2rem;
+    }
+    .exploreTitle{
+        width: 100%;
+    }
+    .conversion{
+        padding:2rem;
+    }
+    .conversionContainerText{
+    
+        padding:1rem;
+        
+    }
+    .sendMoney{
+        background: var(--primaryColor);
+        clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);  
+        padding: 8rem 2rem;
+    }
+    .sendMoneyContainerScreenshot{
+        padding-left: 0;
+        width: 100%;
+       
+    }
+    .sendMoneyContainerScreenshotContainer{
+        display: block;
+        
+    }
+    .sendMoneyContainerScreenshotLeft{
+        width: 100%;
+       
+    }
+    .sendMoneyContainerScreenshotRight{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .depositProcess{
+        padding:3rem 2rem;
+    }
+    .receiveMoney{
+        padding:3rem 2rem;
+    }
+    .receiveMoneyMethodescontainer{
+        display: block;
+    }
+    .securité{
+        padding:3rem 2rem;  
+    }
+    .securitéContainer{
+       padding: 0rem;
+       box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 0px;
+    }
+    .contactContainer{
+        display:block;
+        padding:3rem 2rem;
+    }
+    .contactContainerText{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-right: 0rem;
+    }
+    .contactContainerForm{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 0rem;
+        margin-top: 2rem;
+    }
+
+    
+}

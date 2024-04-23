@@ -1,0 +1,443 @@
+:root{--primaryColor:#8C2B3D; --secondaryColor:#DAA4B8; --primaryAccent:#8C2B3D;}
+
+.howItworksHeader .navBar .menu ul li a{
+    color: var(--primaryColor);
+}
+.howItworksHeader .navBar .menu ul li .connexion{
+    color: white;
+}
+.howItworksHeader .navBar .menu ul li a:hover{
+    color: var(--secondaryColor);
+}
+.howItworksHeaderDescription{
+    background-image: url('IMG/360_F_536572747_X7sccJeNANysCWNQwnR2UoL0KilI34PK.jpg');
+    background-size: cover;
+    object-fit: cover; 
+}
+.howItworksHeaderDescriptionContainer{
+    background: rgba(0,0,0,0.5);
+    padding:15rem 5rem 5rem 5rem;
+}
+.title h1{
+    font-size: 4rem;
+    font-weight: 900;
+    color: white;
+}
+.explore{
+    padding: 5rem;
+}
+
+.exploreTitle{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.explore h2{
+    text-align: center;
+    color: var(--primaryAccent);
+    font-weight:900;
+    
+}
+.exploreDescription{
+    display: flex;
+    margin-top: 2rem;
+}
+.exploreDescriptionText{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.exploreDescriptionText p{
+    line-height: 1.5rem;
+    margin-right: 2rem;
+}
+.exploreDescriptionImage{
+    width: 50%;
+}
+.exploreDescriptionImage img{
+    width: 100%;
+}
+.conversion{
+    padding: 5rem;
+}
+.conversionContainer{
+    display: flex;
+    background:rgba(140,43,61,0.2) ;
+}
+.conversionContainerImage{
+    width: 40%;
+}
+.conversionContainerImage img{
+    width: 100%;
+    height: 100%;
+}
+.conversionContainerText{
+    width: 60%;
+    padding:2rem;
+    display: flex;
+    align-items: center;
+}
+.conversionContainerText h2{
+    font-weight: 900;
+}
+.convertButton{
+    display: block;
+    background: var(--primaryAccent);
+    padding:0.5rem 1rem;
+    margin-top: 1rem;
+    outline: none;
+    border: 0;
+    color: white;
+    border-radius: 0.2rem;
+    font-weight: bold;
+}
+.sendMoney{
+    background: var(--primaryColor);
+    clip-path: polygon(0 18%, 100% 0, 100% 83%, 0 100%); 
+    padding: 15rem 5rem;
+}
+.sendMoneyContainer{
+    display: flex;
+}
+.sendMoneyContainerText{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.sendMoneyContainerText h3{
+    color: var(--secondaryColor);
+    font-weight: 900;
+}
+.sendMoneyContainerText h1{
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 2rem;
+}
+.sendMoneyContainerText p{
+    color: rgb(218, 213, 213);
+    margin-top: 1rem;
+    font-weight: bold;
+}
+.plus{
+    display:inline-block;
+    margin-top: 1rem;
+    background:var(--secondaryColor);
+    padding:0.1rem 0.5rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.5rem;
+}
+.sendMoneyContainerScreenshot{
+    display: flex;
+    width: 60%;
+   
+}
+.sendMoneyContainerScreenshotContainer{
+    display: flex;
+    padding-left: 2rem;
+}
+.sendMoneyContainerScreenshotLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 40%;
+    border: 5px solid #DCDCDC;
+    background: white;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.sendMoneyContainerScreenshotLeftForm{
+    width: 100%;
+    
+}
+.sendMoneyContainerScreenshotLeftForm p{
+    font-size: 0.7rem;
+    margin-top: 1rem;
+    color: gray;
+}
+.sendMoneyContainerScreenshotLeftForm h4{
+    margin-top: 1rem;
+}
+.sendMoneyContainerScreenshotLeftForm .formSimulation,.sms{
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background:#DCDCDC ;
+    color: gray;
+    font-size: 0.7rem;
+}
+.sms{
+    padding:0.5rem 0.5rem 4rem 0.5rem ;
+}
+.logoSimulation{
+    color: var(--primaryColor);
+    font-weight: bold;
+}
+.buttonSimulation{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.buttonSimulation button{
+    font-size: 0.7rem;
+    border: 0;
+    outline:none;
+    color: var(--primaryAccent);
+    font-weight: bold;
+    padding: 0rem 0.5rem;
+}
+.nextSimulation{
+    position: relative;
+}
+.nextSimulation i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid var(--primaryColor) ;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color:var(--primaryColor) ;
+    animation: agrandir 2s infinite;
+}
+.nextSimulation button{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.sendMoneyContainerScreenshotRight{
+    width: 60%;
+    height: 100%;
+}
+
+.notificationSimilatonContainer{
+    background-color: white;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.checkMessage{
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem;
+}
+.checkMessage i{
+  
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    color: green;
+    font-weight: bolder;
+    font-size: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.notificationSimilatonContainerButton{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: right;
+ 
+}
+.notificationSimilatonContainerButton .notificationSimilatonContainerButtonCont{
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+}
+.notificationSimilatonContainerButton .notificationSimilatonContainerButtonCont button{
+    border: 0;
+    background: var(--primaryColor);
+    padding:0.2rem 0.5rem;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.notificationSimilatonContainerButton .notificationSimilatonContainerButtonCont i{
+    position: absolute;
+    right:1rem;
+    z-index: 10;
+    border: 1px solid var(--secondaryColor);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    color: var(--secondaryColor);
+    animation: agrandir 2s infinite;
+}
+.sendMoneyContainerScreenshotRightContainer{
+    position: relative;
+    width: 100%;
+}
+.notificationSimilaton{
+    position: absolute;
+    width: 100%;
+  
+}
+.confirmationExplanation{
+    padding: 2rem;
+    background: var(--secondaryColor);
+    color: white;
+}
+.depositProcess{
+    padding: 3rem 4rem;
+    display: flex;
+    justify-content: center;
+}
+.depositProcessContainer{
+display: flex;
+}
+.bankDeposit{
+    width: 50%;
+    margin: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.bankDeposit img{
+    width: 100%;
+    object-fit: cover;
+}
+.bankDepositDescription{
+    padding: 1rem;
+}
+.bankDepositDescription h2{
+    font-weight: 900;
+}
+.receiveMoney{
+    background: #faf7f7;
+    padding: 5rem;
+}
+.receiveMoneyContainer{
+    display: flex;
+}
+.receiveMoneyDescription{
+    width: 65%;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+}
+.receiveMoneyMethodes{
+    width: 35%;
+}
+.sendTitle{
+    font-weight: 900;
+    color: var(--secondaryColor);
+    
+}
+.receiveMoneyDescription h1{
+    color: var(--primaryAccent);
+    font-size: 2rem;
+    font-weight: 900;
+}
+.receiveMoneyMethodes{
+    padding-left: 1rem;
+}
+.receiveMoneyDescription p{
+    margin-top: 1rem;
+}
+.methodes{
+    margin-top: 1rem;
+}
+.methodes i{
+    color: var(--secondaryColor);
+    padding-left: 0.5rem;
+}
+.methodes h3{
+    color: gray;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    border-left: 1px solid var(--primaryAccent);
+    padding-left: 0.5rem;
+}
+.methodes p{
+    padding-left: 0.5rem;
+}
+.securité{
+    padding:10rem 5rem 15rem 5rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.securitéContainer{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.securitéTitle{
+    text-align: center;
+    
+}
+.securitéTitle h2{
+    color: var(--primaryAccent);
+    font-weight: 900;
+}
+.securitéTitle p{
+    margin-top: 1rem;
+    color: gray;
+    font-weight: bold;
+}
+.one{
+    display: block;
+    width: 70%;
+    position: absolute;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.one h3{
+    color: var(--primaryAccent);
+    font-weight: 900;
+}
+.un{
+    top: -5rem;
+    left: -7rem;
+}
+.deux{
+    bottom: 0rem;
+    left: -15rem;
+}
+.trois{
+    right: -12rem;
+    top: 0rem;
+}
+.quatre{
+    bottom: -8rem;
+    right: -5rem;
+}
+.footer{
+    padding:2rem 5rem;
+    background:var(--primaryAccent);
+    color: white;
+    text-align: center;
+}
+
+@keyframes agrandir{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+

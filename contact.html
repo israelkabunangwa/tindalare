@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js" defer></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" defer></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="app.js" defer type="text/babel"></script>
+    <script src="https://cdn.web3forms.com/v3/web3forms.js" async defer></script>
+</head>
+<body>
+    <section class="contact">
+        <div class="kab">
+            <div class="navBar"></div>
+            <div class="contactContainer"> 
+                <div class="contactContainerText">
+                    <div>
+                        <h1>Contactez-Nous</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus rem quidem vel sed iusto necessitatibus est suscipit eligendi deleniti dolores.</p>
+                        <span class="whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i>+243972031042</span>
+                        <div class="socialMedia">
+                            <span><i class="fab fa-facebook" aria-hidden="true"></i></span>
+                            <span><i class="fab fa-instagram" aria-hidden="true"></i></span>
+                            <span><i class="fab fa-linkedin" aria-hidden="true"></i></span>
+                            <span><i class="fab fa-twitter" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="contactContainerForm">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                       
+                        <input
+                        type="hidden"
+                        name="access_key"
+                        value="26a0aad4-9944-4473-9eb0-baf94e255aa9"
+                      />
+                      <!--<input
+                        type="hidden"
+                        name="subject"
+                        value="TINDALARE"
+                      />
+                      <input
+                        type="hidden"
+                        name="redirect"
+                        value="https://web3forms.com/success?title=Nous%20avons%20re%C3%A7u%20votre%20message&desc=Notre%20%C3%A9quipe%20vous%20r%C3%A9pondra%20dans%20les%2024%20heures"
+                      />-->
+    
+                        <input type="text" name="name" placeholder="enter your name" required>
+                        <input type="email" name="email" placeholder="enter your email" required>
+                       <textarea name="message" placeholder="message" required></textarea>
+                       <button type="submit" class="submit">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="kabb">
+
+        </div>
+    </section>
+    <script type="module" src="script.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    
+</body>
+</html>
