@@ -10,7 +10,7 @@ export const navBar=()=>{
                 <li><a href="howItWork.html">How it works</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="connexion.html" class="connexion">Se connecter</a></li>
+                <li><a href="#" class="connexion">Se connecter</a></li>
             </ul>
         </nav>
     </div>

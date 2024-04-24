@@ -9,7 +9,55 @@
   font-family: 'Mulish', sans-serif;
 }
 :root{--primaryColor:#8C2B3D; --secondaryColor:#DAA4B8; --primaryAccent:#8C2B3D;}
-
+/*============MODAL=========================*/
+.modal{
+    background-color: black;
+    display: none;
+    height:100vh;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+    animation-name:slideinModal ;
+    animation-duration: 0.5s;
+}
+@keyframes slideinModal {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+.closeM{
+    display: flex;
+    justify-content: flex-end;
+    height: 10%;
+    padding: 2rem;
+    color: white;
+    font-size: 2rem;
+}
+.menuModal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    height: 90%;
+}
+.menuModal li{
+    list-style: none;
+    margin: 4rem 0rem;
+}
+.menuModal li a{
+    text-decoration: none;
+    color: white;
+}
+   
+/*=========================================*/
 .navContainer{
     display: flex;
     justify-content: space-between
