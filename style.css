@@ -11,7 +11,7 @@
 :root{--primaryColor:#8C2B3D; --secondaryColor:#DAA4B8; --primaryAccent:#8C2B3D;}
 /*============MODAL=========================*/
 .modal{
-    background-color: black;
+    background-color: var(--primaryAccent);
     display: none;
     height:100vh;
     width: 80%;
@@ -48,6 +48,9 @@
    
     height: 90%;
 }
+.menuModal ul{
+    text-align: center;
+}
 .menuModal li{
     list-style: none;
     margin: 4rem 0rem;
@@ -56,7 +59,24 @@
     text-decoration: none;
     color: white;
 }
-   
+.modaleClosed{
+  
+    animation-name:slideinModalClose ;
+    animation-duration: 0.5s;
+  
+
+} 
+@keyframes slideinModalClose {
+    from {
+        transform: translateX(0%);
+        /*opacity: 0;*/
+      }
+    
+      to {
+        transform: translateX(100%);
+        
+      }
+  }
 /*=========================================*/
 .navContainer{
     display: flex;
