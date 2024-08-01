@@ -7,7 +7,6 @@ function openModal(){
     
     bars.addEventListener('click',()=>{
         let modal=document.querySelector('.modal')
-        
         modal.style.display='block'
         bars.style.display='none'
     })
@@ -18,8 +17,8 @@ function closeModal(){
     let closeM=document.querySelector('.closeM')
     let modal=document.querySelector('.modal')
     closeM.addEventListener('click',()=>{
-        modal.classList.add('modaleClosed')
-     
+        
+        modalClose.style.display='none'
         bars.style.display='block'
         
     })
